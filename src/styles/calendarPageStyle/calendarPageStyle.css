@@ -1,0 +1,15 @@
+:root{
+    --calendar-page-main-background-color:#F2F5F7;
+}
+
+.calendar-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-main{
+    padding: 1.5rem 3rem;
+    background: var(--calendar-page-main-background-color);
+    display: flex;
+    gap: 2rem;
+}

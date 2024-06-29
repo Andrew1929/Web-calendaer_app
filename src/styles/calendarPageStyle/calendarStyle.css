@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --calendar-background-color:#ffffff;
+    --calendar-net-color:#DEDFE5;
+    --calendar-current-day-background-color:#DFF5E2;
+    --calendar-text-color:#323749;
+    --calendar-box-shadow-color:#0000001A;
+}
+
+.calendar{
+    width: 100%;
+    background: var(--calendar-background-color);
+    border-radius: .5rem;
+    box-shadow: 0 4px 4px var(--calendar-box-shadow-color);
+    display: grid;
+}
+
+.calendar-top-part{
+    display: flex;
+    height: 4rem;
+    box-shadow: 0 4px 4px var(--calendar-box-shadow-color);
+}
+
+.day-week{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 10rem);
+}
+
+.day-week-day-mode{
+    grid-template-columns: repeat(1, 70rem);
+}
+
+.odd{
+    width: 5rem;
+}
+
+.day-info{
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    border-left: 1px solid var(--calendar-net-color);
+}
+
+.day-number{
+    font-size: 1.0625rem;
+    font-family: Inter;
+    font-weight: 700;
+    color: var(--calendar-text-color);
+}
+
+.dayW{
+    font-family: Inter;
+    color: var(--calendar-text-color);
+    font-size: .625rem;
+    font-weight: 400;
+}
+
+.calendar-content{
+    display: flex;
+}
+
+.hours{
+    overflow-y: auto;
+    width: 4.7rem;
+    display: grid;
+    grid-template-rows: repeat(24, 6rem);
+}
+
+.hour{
+    color: var(--calendar-text-color);
+    font-family: Inter;
+    text-align: center;
+    margin-top: .25rem;
+}
+
+.events-list{
+    display: grid;
+    grid-template-columns: repeat(7, 10rem);
+}
+
+
+.day-events-list{
+    grid-template-columns: repeat(1, 70rem);
+}
+
+.event{
+    height: 6rem;
+    border-left: 1px solid var(--calendar-net-color);
+    border-bottom: 1px solid var(--calendar-net-color) ;
+}
+
+.today{
+    border-left: 1px solid var(--calendar-net-color) ;
+}
+
+.today-info{
+    border-radius: .5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--calendar-current-day-background-color);
+}
+

@@ -1,0 +1,16 @@
+:root{
+    --login-page-background-color:#F2F5F7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-page-body{
+    height: 100vh;
+    background: var(--login-page-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

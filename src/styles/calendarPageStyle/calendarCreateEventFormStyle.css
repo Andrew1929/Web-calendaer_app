@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --create-event-form-box-shadow:#0000003D;
+    --create-event-form-background-color:#ffffff;
+    --create-event-form-content-color:#323749;
+    --create-event-form-header-border-color:#DEDFE5;
+    --create-event-form-save-btn-color:#00AE1C;
+    --create-event-form-save-btn-box-shadow-color:#1018280D;
+}
+
+.create-event-form{
+    position: fixed;
+    margin-left: 30rem;
+    z-index: 2;
+    display: flex;
+    gap: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 32.5rem;
+    flex-direction: column;
+    box-shadow: 0 16px 50px var(--create-event-form-box-shadow);
+    background: var(--create-event-form-background-color);
+}
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--create-event-form-header-border-color);
+}
+
+.form-title{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--create-event-form-content-color);
+}
+
+.close-form-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.event-title-input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.deadline{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.datepicker{
+    display: flex;
+    gap: 1rem;
+}
+
+.select-date-input{
+    cursor: pointer;
+    border-left: none ;
+    border-right: none ;
+    border-top: none ;
+    padding-bottom: .75rem;
+    border-bottom:  1px solid var(--create-event-form-content-color) ;
+}
+
+.select-date-input:focus{
+    outline: none;
+}
+
+.form-icon{
+    width: .75rem;
+    color: var(--create-event-form-content-color);
+}
+
+.select-date{
+    cursor: pointer;
+    width: 15rem;
+    padding-top: .1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--create-event-form-content-color);
+}
+
+.time-deadline{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.line-between{
+    color: var(--create-event-form-content-color);
+}
+
+.notification{
+    padding-left: 1.75rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.calendar-picker,
+.description-input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.save-event-btn{
+    width: 5rem;
+    place-self: end;
+    padding: .5rem 1rem;
+    background: var(--create-event-form-save-btn-color);
+    cursor: pointer;
+    box-shadow: 0 1px 2px var(--create-event-form-save-btn-box-shadow-color);
+    border: 1px solid var(--create-event-form-save-btn-color);
+    border-radius: .5rem;
+}
+
+.save-event-btn-text{
+    color: var(--create-event-form-background-color);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); 
+
+:root{
+    --list-background-color:#FFFFFF;
+    --list-text-color:#323749;
+    --list-box-shadow-color:#0000001A;
+    --list-item-hover-color:#F6F7F8;
+}
+
+.list{
+    background: var(--list-background-color);
+    box-shadow: 0 4px 4px var(--list-box-shadow-color);
+    border-radius: .5rem;
+    padding: 1rem .5rem .5rem .5rem;
+}
+
+.list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-title{
+    color: var(--list-text-color);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.list-header-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.list-header-btn-icon{
+    color: var(--list-text-color);
+    height: 1rem;
+}
+
+.list-of-calendars{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: .25rem;
+    height: 6.5rem;
+    list-style: none;
+    padding: 1rem 1rem 1rem .5rem ;
+}
+
+.calendar-item{
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    width: 11rem;
+}
+
+.calendar-item:hover{
+    background: var(--list-item-hover-color);
+
+    .calendar-item-btns{
+        display: flex;
+    }
+}
+
+.calendar-item-btns{
+    display: none;
+    gap: .5rem;
+}
+
+.calendar-item-btn{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.calendar-item-btn-icon{
+    width: .75rem;
+    color: var(--list-text-color);
+}
+
+::-webkit-scrollbar {
+    width: .25rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--list-background-color);
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--list-item-hover-color); 
+    height: 1.25rem;
+}

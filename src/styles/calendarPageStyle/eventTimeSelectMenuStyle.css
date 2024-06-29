@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --select-menu-label-value-and-bottom-line-color:#323749;
+    --active-select-menu-border-color:#DEE0E5;
+    --active-select-menu-box-shadow-color:#3131311A;
+    --active-select-menu-selected-item-color:#E3E3E3;
+    --active-select-menu-hover-item-color:#F6F6F6;
+    --select-menu-background-color:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown *{
+    box-sizing: border-box;
+}
+
+.select-menu-label{
+    font-size: .625rem;
+    font-weight: 700;
+}
+
+.select{
+    cursor: pointer;
+    width: 6.1rem;
+    display: flex;
+    padding-top: .1rem;
+    color: var(--select-menu-label-value-and-bottom-line-color);
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--select-menu-label-value-and-bottom-line-color);
+}
+
+.select-clicked
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.select-menu{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border-radius: .5rem;
+    background: var(--select-menu-background-color);
+    border: 1px solid var(--active-select-menu-border-color);
+    box-shadow: 0 8px 16px var(--active-select-menu-box-shadow-color);
+    position: absolute;
+    width: 6.5rem;
+    opacity: 0;
+    display: none;
+    z-index: 1;
+    height: 11.25rem;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: .25rem;
+}
+  
+  
+::-webkit-scrollbar-track {
+    background: var(--select-menu-background-color);
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--active-select-menu-border-color); 
+    height: 1.25rem;
+}
+
+.select-menu li{
+    padding: .5rem 1.25rem .5rem .5rem;
+    cursor: pointer;
+}
+
+.select-menu li:hover{
+    background: var(--active-select-menu-hover-item-color);
+}
+
+.select-menu li:active{
+    background: var(--active-select-menu-selected-item-color);
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}

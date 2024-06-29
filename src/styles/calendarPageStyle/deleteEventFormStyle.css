@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --delete-form-background-color:#FFFFFF;
+    --delete-form-box-shadow-color:#0000003D;
+    --delete-form-header-and-button-border-color:#DEDFE5;
+    --delete-form-content-color:#323749;
+    --delete-form-cancel-and-delete-btn-box-shadow-color:#1018280D;
+    --delete-form-delete-btn-color:#00AE1C;
+}
+
+.delete-event-form{
+    border-radius: .5rem;
+    background: var(--delete-form-background-color);
+    box-shadow: 0 16px 50px var(--delete-form-box-shadow-color);
+    padding: 1rem;
+    width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left:-25rem;
+}
+
+.delete-event-form-header{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--delete-form-header-and-button-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-event-form-title{
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--delete-form-content-color);
+}
+
+.delete-event-close-form-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-icon{
+    color: var(--delete-form-content-color);
+}
+
+.delete-event-form-warning{
+   color: var(--delete-form-content-color);
+   font-weight: 400;
+   font-family: Inter;
+}
+
+.delete-event-form-btns{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    place-self: end;
+}
+
+.delete-event-form-cancel-btn,
+.delete-event-form-delete-btn{
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    box-shadow: 0 1px 2px var(--delete-form-cancel-and-delete-btn-box-shadow-color);
+}
+
+.delete-event-form-cancel-btn{
+    background: var(--delete-form-background-color);
+    border: 1px solid var(--delete-form-header-and-button-border-color);
+}
+
+.delete-event-form-delete-btn{
+    background: var(--delete-form-delete-btn-color);
+    border: 1px solid var(--delete-form-delete-btn-color);
+}
+
+.cancel-event-form-btn-text{
+    font-family: Inter;
+    color: var(--delete-form-content-color);
+    font-weight: 400;
+}   
+
+.delete-event-form-btn-text{
+    font-family: Inter;
+    color: var(--delete-form-background-color);
+    font-weight: 400;
+}
